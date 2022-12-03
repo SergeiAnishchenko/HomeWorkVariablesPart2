@@ -161,22 +161,22 @@ public class Main {
     private static void task8() {
         System.out.println("Задача 8");
 
-        int mashaSalary = 67760;
-        int denisSalary = 83690;
-        int kristinaSalary = 76230;
+        int mashaPerMonthSalary = 67760;
+        int denisPerMonthSalary = 83690;
+        int kristinaPerMonthSalary = 76230;
         double salaryIncreaseCoefficient = 1.1;
-        int newMashaSalary = (int) (mashaSalary * salaryIncreaseCoefficient);
-        int newDenisSalary = (int) (denisSalary * salaryIncreaseCoefficient);
-        int newKristinaSalary = (int) (kristinaSalary * salaryIncreaseCoefficient);
-        int mashaIncomeIncrease = newMashaSalary - mashaSalary;
-        int denisIncomeIncrease = newDenisSalary - denisSalary;
-        int kristinaIncomeIncrease = newKristinaSalary - kristinaSalary;
+        int newMashaSalary = (int) (mashaPerMonthSalary * salaryIncreaseCoefficient);
+        int newDenisSalary = (int) (denisPerMonthSalary * salaryIncreaseCoefficient);
+        int newKristinaSalary = (int) (kristinaPerMonthSalary * salaryIncreaseCoefficient);
+        int mashaYearIncomeIncrease = 12 * (newMashaSalary - mashaPerMonthSalary);
+        int denisYearIncomeIncrease = 12 * (newDenisSalary - denisPerMonthSalary);
+        int kristinaYearIncomeIncrease = 12 * (newKristinaSalary - kristinaPerMonthSalary);
 
         System.out.println("Маша теперь получает " + newMashaSalary + " рублей."
-                + " Годовой доход вырос на " + mashaIncomeIncrease + " рублей.");
+                + " Годовой доход вырос на " + mashaYearIncomeIncrease + " рублей.");
         System.out.println("Денис теперь получает " + newDenisSalary + " рублей."
-                + " Годовой доход вырос на " + denisIncomeIncrease + " рублей.");
+                + " Годовой доход вырос на " + denisYearIncomeIncrease + " рублей.");
         System.out.println("Кристина теперь получает " + newKristinaSalary + " рублей."
-                + " Годовой доход вырос на " + kristinaIncomeIncrease + " рублей.");
+                + " Годовой доход вырос на " + kristinaYearIncomeIncrease + " рублей.");
     }
 }
